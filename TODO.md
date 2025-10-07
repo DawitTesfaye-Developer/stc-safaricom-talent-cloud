@@ -1,0 +1,3 @@
+- [x] Update src/database/mongoose.ts to add MongoDB connection logic using Mongoose
+- [x] Update src/server.ts to import and call the connect function before starting the server
+- [ ] Test the connection by running the server
