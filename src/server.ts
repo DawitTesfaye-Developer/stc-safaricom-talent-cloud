@@ -1,17 +1,10 @@
 import { connectToMongoDB } from './database/mongoose';
 import { app } from './app';
-import { Request, Response } from 'express';
+import { PORT } from './config';
 
-
-const PORT = 3000;
 
 // Start the mongodb Connection
 connectToMongoDB();
-
-
-app.get('/hello', (req: Request, res:Response) => {
-    res.send({message: 'Hello World!'})
-})
 
   // Start the Server
   app.listen(3000, () => {
